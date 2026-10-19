@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-cream: #FAF8F5;
+  --text-charcoal: #1C1917;
+  --accent-bronze: #9E7B56;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--text-charcoal);
+  overflow-x: hidden;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4EFE8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9E7B56;
+  border-radius: 9999px;
+}
+
+/* Print stylesheet so printing from the browser outputs a clean CV sheet */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #FAF8F5 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  #printable-cv {
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
