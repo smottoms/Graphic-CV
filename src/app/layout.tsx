@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: "Toms Johnson | Graphic & Motion Graphic Designer",
   description:
     "Portfolio & Interactive Curriculum Vitae of Toms Johnson — Graphic and Motion Graphic Designer based in Andheri East, Mumbai. Experienced in brand visuals, motion graphics, event design, and digital storytelling.",
+  icons: {
+    icon: "/cat-favicon.svg",
+    shortcut: "/cat-favicon.svg",
+    apple: "/cat-favicon.svg",
+  },
 };
 
 export default function RootLayout({
